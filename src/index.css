@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,48 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Markdown content styles */
+@layer components {
+  .prose h1 {
+    @apply text-3xl font-bold text-knowledge-900 mb-4;
+  }
+  
+  .prose h2 {
+    @apply text-2xl font-semibold text-knowledge-800 mt-8 mb-4;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold text-knowledge-700 mt-6 mb-3;
+  }
+  
+  .prose p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-5 mb-4 text-gray-700;
+  }
+  
+  .prose ol {
+    @apply list-decimal pl-5 mb-4 text-gray-700;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose pre {
+    @apply mb-4 rounded-md overflow-auto;
+  }
+  
+  .prose img {
+    @apply mx-auto rounded-lg;
+  }
+  
+  .prose iframe {
+    @apply w-full rounded-lg shadow-lg;
   }
 }

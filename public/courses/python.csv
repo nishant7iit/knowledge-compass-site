@@ -1,0 +1,6 @@
+
+topic_id,topic_title,subtopic_title,markdown_path,pdf_path,youtube_url
+intro,Introduction,Python Overview,markdowns/python/introduction.md,pdfs/python/introduction.pdf,https://www.youtube.com/embed/_uQrJ0TkZlc
+variables,Variables,Data Types,markdowns/python/variables.md,pdfs/python/variables.pdf,https://www.youtube.com/embed/rfscVS0vtbw
+control-flow,Control Flow,Conditionals & Loops,markdowns/python/control-flow.md,pdfs/python/control-flow.pdf,https://www.youtube.com/embed/rfscVS0vtbw
+functions,Functions,Basics,markdowns/python/functions.md,pdfs/python/functions.pdf,https://www.youtube.com/embed/9Os0o3wzS_I

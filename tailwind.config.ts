@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Knowledge Compass specific colors
+				"knowledge": {
+					"50": "#edf5ff",
+					"100": "#e0eeff",
+					"200": "#c7ddff",
+					"300": "#a1c5ff",
+					"400": "#739fff",
+					"500": "#3b78ff",
+					"600": "#2361ff",
+					"700": "#1148f6",
+					"800": "#133ad1",
+					"900": "#1735a9",
+					"950": "#0f2060"
 				}
 			},
 			borderRadius: {
@@ -84,13 +99,57 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0'
+					},
+					to: {
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out'
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						maxWidth: '100%',
+						color: 'inherit',
+						a: {
+							color: 'inherit',
+							textDecoration: 'underline',
+							fontWeight: '500',
+						},
+						h1: {
+							color: 'inherit',
+						},
+						h2: {
+							color: 'inherit',
+						},
+						h3: {
+							color: 'inherit',
+						},
+						code: {
+							color: 'inherit',
+						},
+						pre: {
+							color: 'inherit',
+							backgroundColor: 'rgb(243 244 246)',
+						},
+						strong: {
+							color: 'inherit',
+						},
+					},
+				},
+			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		require('@tailwindcss/typography'),
+	],
 } satisfies Config;

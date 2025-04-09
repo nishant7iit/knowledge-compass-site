@@ -1,0 +1,7 @@
+
+topic_id,topic_title,subtopic_title,markdown_path,pdf_path,youtube_url
+intro,Introduction,Getting Started,markdowns/webdev/introduction.md,pdfs/webdev/introduction.pdf,https://www.youtube.com/embed/PkZNo7MFNFg
+html-basics,HTML,Fundamentals,markdowns/webdev/html-basics.md,pdfs/webdev/html-basics.pdf,https://www.youtube.com/embed/qz0aGYrrlhU
+css-basics,CSS,Styling Basics,markdowns/webdev/css-basics.md,pdfs/webdev/css-basics.pdf,https://www.youtube.com/embed/1PnVor36_40
+js-intro,JavaScript,Introduction,markdowns/webdev/js-intro.md,pdfs/webdev/js-intro.pdf,https://www.youtube.com/embed/W6NZfCO5SIk
+react-basics,React,Components & Props,markdowns/webdev/react-basics.md,pdfs/webdev/react-basics.pdf,https://www.youtube.com/embed/Ke90Tje7VS0
